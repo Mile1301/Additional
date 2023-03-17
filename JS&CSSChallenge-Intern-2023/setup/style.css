@@ -1,0 +1,310 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  background: #ffffff;
+  margin: 15px;
+  width: 340px;
+}
+
+.preview {
+  background: #f9fafd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* added by me */
+  margin-top: auto;
+}
+
+.layout-placeholder {
+  color: #464b5b;
+  font-size: 18px;
+  /* added by me */
+  gap: 20px;
+  width: 85%;
+}
+
+.accordion {
+  background: #e6ebff;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+.accordion-title {
+  color: #0033ff;
+  font-weight: 800;
+  font-size: 18px;
+  margin: 0;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+input {
+  box-sizing: border-box;
+}
+
+.form-control {
+  background-color: #ffffff;
+  border: 1px solid #d6dae4;
+  border-radius: 3px;
+  padding: 6px 12px;
+  height: 38px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 14px;
+}
+
+input[type="radio"] {
+  margin: 0;
+  width: 15px;
+  height: 15px;
+}
+
+.radio-select {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+/* Card styles */
+
+:root {
+  --color-black: #000;
+  --color-dark: #1d3557;
+  --color-whitish: #f1faee;
+  --color-white: #fff;
+  --color-border: #dadadc;
+}
+a {
+  text-decoration: none;
+}
+
+.socialMedia-card {
+  background: var(--color-white);
+  border: 2px solid var(--color-border);
+  border-radius: 1px;
+  width: 100%;
+  max-width: 600px;
+  margin-block: 20px;
+}
+
+.socialMedia-card-header {
+  padding: 20px;
+  height: 40px;
+  display: flex;
+  justify-content: left;
+  background-color: inherit;
+}
+
+.socialMedia-card-user-image {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
+.socialMedia-card-userAndDateContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+}
+.socialMedia-card-user-name {
+  margin-left: 20px;
+  font-weight: bold;
+  color: var(--color-black);
+}
+.socialMedia-card-date {
+  margin-left: 20px;
+  font-size: 12px;
+  color: var(--color-black);
+}
+
+.socialMedia-card-icon {
+  padding-block: 5px;
+  flex: 0.5;
+}
+.socialMedia-card-image {
+  padding-inline: 20px;
+  display: flex;
+  justify-content: center;
+}
+.socialMedia-card-image-background {
+  max-height: 500px;
+  max-width: 100%;
+}
+
+.socialMedia-card-content {
+  padding: 20px;
+  color: var(--color-black);
+  height: 182px;
+}
+.socialMedia-card-content > p {
+  margin: 0;
+  height: 150px;
+  text-align: justify;
+}
+
+hr {
+  border-bottom: 1px solid var(--color-border);
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+.socialMedia-card-footer {
+  padding: 20px;
+  color: var(--color-black);
+}
+
+.socialMedia-card-footer-icon {
+  font-size: 16px;
+  color: var(--color-border);
+}
+
+/* Hide posts class */
+.dNone {
+  display: none;
+}
+
+/* button Div and button inside*/
+.btnDiv {
+  position: fixed;
+  top: 600px;
+  right: 200px;
+}
+
+.nextBtn {
+  color: var(--color-dark);
+  border: 2px solid;
+  padding: 1em 2em;
+  font-size: 1em;
+  transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+
+.nextBtn:hover {
+  border-color: var(--color-dark);
+  color: var(--color-dark);
+  box-shadow: 0 0.5em 0.5em -0.4em var(--color-dark);
+  transform: translateY(-0.25em);
+  cursor: pointer;
+}
+
+/* back to top Div */
+.btoTop {
+  position: fixed;
+  top: 600px;
+  left: 200px;
+}
+.btoTopAnchor {
+  background-color: #f0f0f0;
+  color: var(--color-dark);
+  border: 2px solid;
+  border-radius: 30px;
+  padding: 1em 2em;
+  font-size: 1em;
+  transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+.btoTopAnchor:hover {
+  border-color: var(--color-dark);
+  color: var(--color-dark);
+  box-shadow: 0 0.5em 0.5em -0.4em var(--color-dark);
+  transform: translateY(-0.25em);
+  cursor: pointer;
+}
+
+/* Dark theme styles */
+.dark .socialMedia-card {
+  background: var(--color-dark);
+  color: var(--color-white);
+}
+
+.dark .socialMedia-card-header {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+}
+
+.dark .socialMedia-card-user-name {
+  color: var(--color-white);
+}
+
+.dark .socialMedia-card-date {
+  color: var(--color-white);
+}
+.dark .socialMedia-card-image {
+  background-color: var(--color-dark);
+}
+
+.dark .socialMedia-card-icon {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+}
+
+.dark .socialMedia-card-content {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+}
+
+.dark hr {
+  border-bottom-color: var(--color-dark);
+}
+
+.dark .socialMedia-card-footer {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+}
+
+.dark .socialMedia-card-footer-icon {
+  color: var(--color-white);
+}
+
+/* Responsiveness */
+/* For mobile devices (less than 768px) */
+@media (max-width: 767px) {
+  .layout-placeholder {
+    width: 100%; /* display one post in a row */
+    font-size: 70%;
+  }
+}
+
+/* For tablets (between 768px and 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .layout-placeholder {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 70%;
+  }
+}
+
+/* For desktop devices (greater than 992px) */
+@media (min-width: 992px) {
+  .layout-placeholder {
+    font-size: 70%;
+    display: grid;
+    grid-template-columns: repeat(var(--num-columns), 1fr);
+    /* Logic for the number of columns -var(--num-columns) is part of it - i found it on internet - i don't know this syntax */
+    /* display the number of columns based on a custom property */
+  }
+}
