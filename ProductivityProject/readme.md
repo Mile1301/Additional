@@ -16,7 +16,7 @@ The initial html, css and js files are written where:
    
    -for accessibility we can add header, main, aside,etc
    
-2. In the `style.css` file there is some basic css styles needed for the page to work properly
+2. In the `style.css` file there are some basic css styles needed for the page to work properly
 3. In the `app.js` there are the variables needed to be edited with proper HTML code in order to achieve the business logic from the requirements.
    -in this file only the team members assigned for creating the html may post edits in their spaces
    -just to be more clear, it has comments in the file also
