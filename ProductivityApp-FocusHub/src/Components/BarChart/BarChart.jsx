@@ -13,9 +13,9 @@ const BarChart = () => {
   const above50 = storedTasks.filter((task) => task.date === targetDate && task.percentage >= 50).map((task) => task.percentage);
   const below50 = storedTasks.filter((task) => task.date === targetDate && task.percentage < 50).map((task) => task.percentage);
   const targetDateLabel = storedTasks.filter((task) => task.date === targetDate).map((task) => task.date);
-  console.log(targetDateLabel);
-  console.log(above50);
-  console.log(below50);
+  // console.log(targetDateLabel);
+  // console.log(above50);
+  // console.log(below50);
   // Dummy data for the chart
   const data = {
     labels: [...targetDateLabel],
