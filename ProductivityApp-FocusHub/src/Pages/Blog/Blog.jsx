@@ -1,10 +1,10 @@
+import "./Blog.css";
 import { useState } from "react";
 import { FaCheckCircle, FaStar, FaHeart } from "react-icons/fa";
 import { AiOutlineInfoCircle, AiOutlineDownload } from "react-icons/ai";
 import { RiQuestionnaireFill, RiArrowDownSFill } from "react-icons/ri";
 import { NavLink, useLocation } from "react-router-dom";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-import "./Blog.css";
 import BlogSalesArticle from "./BlogSalesArticle";
 import BlogEfficencyArticle from "./BlogEfficencyArticle";
 import BlogCompensationArticle from "./BlogCompensationArticle";
@@ -12,10 +12,10 @@ import BlogLoyaltyArticle from "./BlogLoyaltyArticle";
 
 const BlogArticle = () => {
   const location = useLocation();
-  const isLearnMoreSales = location.pathname === "/learn-more-sales";
-  const isLearnMoreEff = location.pathname === "/learn-more-efficiency";
-  const isLearnMoreComp = location.pathname === "/learn-more-compensation";
-  const isLearnMoreLoyalty = location.pathname === "/learn-more-loyalty";
+  const isLearnMoreSales = location.pathname === "/blog/learn-more-sales";
+  const isLearnMoreEff = location.pathname === "/blog/learn-more-efficiency";
+  const isLearnMoreComp = location.pathname === "/blog/learn-more-compensation";
+  const isLearnMoreLoyalty = location.pathname === "/blog/learn-more-loyalty";
 
   const [activeSlide, setActiveSlide] = useState(0);
 

@@ -15,6 +15,8 @@
 }
 
 .reminder-card {
+  min-height: 100px;
+  min-width: 80px;
   background-color: #0b3954;
   color: #b7d7ea;
   font-weight: 400;
@@ -27,11 +29,13 @@
   justify-content: space-between;
 }
 .reminders-container h1 {
-  text-align: center;
+  color: #4b4848;
   margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.reminders-container h1 svg{
-  position: absolute;
+.reminders-container h1 svg {
   left: 48.5%;
   top: 16%;
   width: 40px;
@@ -42,22 +46,24 @@
 
 .reminder-delete-btn {
   background-color: #087e8b;
-  /* color: #ffffff; */
   border: none;
   padding: 5px 10px;
   cursor: pointer;
+  min-width: fit-content;
+  min-height: fit-content;
 }
 
 .reminder-delete-btn:hover {
   background-color: #087e8b;
   color: #ccc;
 }
-.polite-message{
+.polite-message {
+  color: #4b4848;
   text-align: center;
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 1900px) and (max-width: 1920px) {
+@media screen and (min-width: 1600px) and (max-width: 1920px) {
   .RemindersMain {
     display: flex;
     min-height: 87vh;
@@ -70,8 +76,13 @@
     align-items: center;
   }
   .reminders-container h1 {
+    color: #4b4848;
     margin: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+
   .reminders-list {
     list-style-type: none;
     padding: 0 60px;
@@ -109,8 +120,7 @@
     background-color: #087e8b;
     color: #ccc;
   }
-  .reminders-container h1 svg{
-    position: absolute;
+  .reminders-container h1 svg {
     left: 48.5%;
     top: 10.9%;
     width: 40px;
@@ -119,20 +129,14 @@
 
 @media screen and (min-width: 620px) and (max-width: 918px) {
   .reminders-list {
-    /* list-style-type: none;
-    padding: 0; */
-    /* display: grid; */
-    grid-template-columns: repeat(3, 1fr); /* Update the number of columns */
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
   }
 }
 
 @media screen and (max-width: 620px) {
   .reminders-list {
-    /* list-style-type: none;
-    padding: 0; */
-    /* display: grid; */
-    grid-template-columns: repeat(1, 1fr); /* Update the number of columns */
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px;
   }
 }
