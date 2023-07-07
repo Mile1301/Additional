@@ -8,28 +8,47 @@ const BarChart = () => {
   const [chartType, setChartType] = useState("bar");
   const storedTasks = JSON.parse(localStorage.getItem("completedTasks"));
 
-  const targetDate = "2023-07-05";
+  // const targetDate = "2023-07-05";
 
-  const above50 = storedTasks.filter((task) => task.date === targetDate && task.percentage >= 50).map((task) => task.percentage);
-  const below50 = storedTasks.filter((task) => task.date === targetDate && task.percentage < 50).map((task) => task.percentage);
-  const targetDateLabel = storedTasks.filter((task) => task.date === targetDate).map((task) => task.date);
+  // const above50 = storedTasks.filter((task) => task.date === targetDate && task.percentage >= 50).map((task) => task.percentage);
+  // const below50 = storedTasks.filter((task) => task.date === targetDate && task.percentage < 50).map((task) => task.percentage);
+  // const targetDateLabel = storedTasks.filter((task) => task.date === targetDate).map((task) => task.date);
   // console.log(targetDateLabel);
   // console.log(above50);
   // console.log(below50);
   // Dummy data for the chart
+  // const data = {
+  //   labels: [...targetDateLabel],
+  //   datasets: [
+  //     {
+  //       label: "Grades over 50%",
+  //       data: [...above50],
+  //       backgroundColor: "rgba(75, 192, 192, 0.6)",
+  //       borderColor: "rgba(75, 192, 192, 1)",
+  //       borderWidth: 1,
+  //     },
+  //     {
+  //       label: "Grades below 49%",
+  //       data: [...below50],
+  //       backgroundColor: "rgba(255, 99, 132, 0.6)",
+  //       borderColor: "rgba(255, 99, 132, 1)",
+  //       borderWidth: 1,
+  //     },
+  //   ],
+  // };
   const data = {
-    labels: [...targetDateLabel],
+    labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
     datasets: [
       {
-        label: "Grades over 50%",
-        data: [...above50],
+        label: "Sales",
+        data: [65, 59, 80, 81, 56, 55, 250, 345, 12, 45, 67, 89],
         backgroundColor: "rgba(75, 192, 192, 0.6)",
         borderColor: "rgba(75, 192, 192, 1)",
         borderWidth: 1,
       },
       {
-        label: "Grades below 49%",
-        data: [...below50],
+        label: "Expenses",
+        data: [35, 41, 50, 49, 28, 37, 250, 345, 12, 45, 67, 89],
         backgroundColor: "rgba(255, 99, 132, 0.6)",
         borderColor: "rgba(255, 99, 132, 1)",
         borderWidth: 1,
