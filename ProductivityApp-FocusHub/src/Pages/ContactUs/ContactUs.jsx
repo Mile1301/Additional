@@ -34,7 +34,8 @@ const ContactUs = () => {
           <form>
             <input type="text" placeholder="Your Name" className="form-input" />
             <input type="email" placeholder="Your Email" className="form-input" />
-            <textarea placeholder="Your Message" className="form-input" />
+            <input type="text" placeholder="Your Message" className="form-input" />
+            {/* <textarea placeholder="Your Message" className="form-input" /> */}
             <Button className="contactUs-btn" btnText="Send Message" type="submit" btnStyle={{ backgroundColor: "#4a69bd", color: "#ffffff" }} />
           </form>
         </div>
