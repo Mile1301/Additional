@@ -65,7 +65,7 @@ const DatePickingPage = () => {
         </div>
         {showAlert && <div className="alert-bubble">Task must be at least 4 characters long. Please try scheduling a task again.</div>}
         <div className="TasksContainer">
-          <h2 style={{ margin: 0 }}>Task Overview for : {selectedDate}</h2>
+          {/* <h2 style={{ margin: 0 }}>Task Overview for : {selectedDate}</h2> */}
           <ul>
             {dateTasks[selectedDate]?.map((task, index) => (
               <li key={index}>
