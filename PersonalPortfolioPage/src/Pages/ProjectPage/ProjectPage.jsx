@@ -90,7 +90,7 @@ const ProjectPage = () => {
           </div>
         </div>
         <div aria-hidden="true" className="mt-10 lg:mt-0">
-          <a id="focusHubLink" href="https://additional-six.vercel.app/" target="_blank">
+          <a id="focusHubLink" href="https://additional-focushub.vercel.app/" target="_blank">
             <img src="../../../public/focusHubBg.png" alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500" />
             <label htmlFor="focusHubLink" className="text-justify">
               Click to open App
