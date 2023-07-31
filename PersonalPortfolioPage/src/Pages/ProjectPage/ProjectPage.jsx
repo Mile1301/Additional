@@ -91,7 +91,7 @@ const ProjectPage = () => {
         </div>
         <div aria-hidden="true" className="mt-10 lg:mt-0">
           <a id="focusHubLink" href="https://additional-focushub.vercel.app/" target="_blank">
-            <img src="../../../public/focusHubBg.png" alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500" />
+            <img src="../../assets/images/focusHubBg.png" alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500" />
             <label htmlFor="focusHubLink" className="text-justify">
               Click to open App
             </label>
@@ -157,7 +157,7 @@ const ProjectPage = () => {
           </div>
           <div className="flex flex-row mt-10 lg:mt-0 lg:col-start-1 lg:row-start-1">
             <a id="todoPitch" href={todoPitch} download={todoPitch}>
-              <img src="../../../public/todoPitchBg.png" width={560} alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500" />
+              <img src="../../assets/images/todoPitchBg.png" width={560} alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500" />
               <label htmlFor="todoPitch" className="text-center">
                 Click for Todo Pitch Download
               </label>
