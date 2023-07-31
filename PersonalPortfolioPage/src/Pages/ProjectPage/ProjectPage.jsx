@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { useLocation } from "react-router-dom";
 import ThemeContext from "../../Contexts/ThemeContext";
 import todoPitch from "../../../public/ToDoPitch.pdf";
+import todoPitchBg from "../../../public/todoPitchBg.png";
 const ProjectPage = () => {
   const { theme } = useContext(ThemeContext);
   const location = useLocation();
@@ -157,7 +158,7 @@ const ProjectPage = () => {
           </div>
           <div className="flex flex-row mt-10 lg:mt-0 lg:col-start-1 lg:row-start-1">
             <a id="todoPitch" href={todoPitch} download={todoPitch}>
-              <img src="../../assets/images/todoPitchBg.png" width={560} alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500" />
+              <img src={todoPitchBg} width={560} alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500" />
               <label htmlFor="todoPitch" className="text-center">
                 Click for Todo Pitch Download
               </label>
