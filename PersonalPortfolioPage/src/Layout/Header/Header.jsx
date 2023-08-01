@@ -15,7 +15,7 @@ const Header = ({ isAboutPageVisible, isContactPageVisible, isSkillsPageVisible,
   return (
     <header
       className="bg-gray-300 relative
-    sticky top-0 px-4 font-semibold text-sm text-slate-900 dark:text-slate-200 bg-slate-50/90 dark:bg-slate-700/90 backdrop-blur-sm ring-1 ring-slate-900/10 dark:ring-black/10 z-10"
+    sticky top-0 px-4 font-semibold text-sm text-slate-900 dark:text-white bg-slate-50/90 dark:bg-slate-700/90 backdrop-blur-sm ring-1 ring-slate-900/10 dark:ring-black/10 z-10"
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 md:px-8 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">

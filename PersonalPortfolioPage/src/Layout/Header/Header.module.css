@@ -1,6 +1,6 @@
 .progressBar {
   position: fixed;
-  top: 10;
+  top: 1;
   left: 0;
   right: 0;
   height: 10px;
@@ -8,4 +8,14 @@
   transform-origin: 0%;
   /* z-index: 1; */
   transition-duration: 100ms;
+}
+
+/* Styles for Safari (position: -webkit-sticky) */
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-sticky: 1) {
+    .progressBar {
+      position: -webkit-sticky;
+      top: 0;
+    }
+  }
 }
