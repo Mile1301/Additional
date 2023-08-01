@@ -2,6 +2,7 @@ import { Cog6ToothIcon, MagnifyingGlassCircleIcon, ComputerDesktopIcon } from "@
 import { useLocation } from "react-router-dom";
 import { useContext } from "react";
 import ThemeContext from "../../Contexts/ThemeContext";
+import presonalPhoto from "../../../public/presonalPhoto.jpg";
 
 const features = [
   {
@@ -72,7 +73,7 @@ const AboutPage = () => {
             </div>
           </div>
           <img
-            src="/public/presonalPhoto.jpg"
+            src={presonalPhoto}
             alt="personal photo"
             className=" w-[18rem] ml-[0.25rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[25rem] md:w-[30rem] xl:w-[35rem] sm:ml-[5rem] md:ml-[5rem] lg:-ml-0"
             width={2432}

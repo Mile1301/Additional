@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom";
 import { motion, useScroll } from "framer-motion";
 import ThemeToggle from "../../ThemeToggle/ThemeToggle";
 import ThemeContext from "../../Contexts/ThemeContext";
+import signature40 from "../../../public/icons8-signature-40.png";
 
 const Header = ({ isAboutPageVisible, isContactPageVisible, isSkillsPageVisible, isProjectsPageVisible }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -86,7 +87,7 @@ const Header = ({ isAboutPageVisible, isContactPageVisible, isSkillsPageVisible,
                   fillRule="nonzero"
                 />
               </svg> */}
-              <img src="../../../public/icons8-signature-40.png" alt="" />
+              <img src={signature40} alt="" />
             </NavLink>
             <button type="button" className="-m-2.5 rounded-md p-2.5 " onClick={() => setMobileMenuOpen(false)}>
               <span className="sr-only">Close menu</span>

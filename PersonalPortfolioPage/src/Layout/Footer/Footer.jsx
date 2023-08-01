@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import signature80 from "../../../public/icons8-signature-80.png";
 
 const Footer = () => {
   return (
@@ -13,7 +14,7 @@ const Footer = () => {
                   fillRule="nonzero"
                 />
               </svg> */}
-              <img src="../../../public/icons8-signature-80.png" alt="" />
+              <img src={signature80} alt="" />
             </a>
             <p className="mt-2 text-sm text-gray-500">Design logic, Code and Ship!</p>
             <div className="mt-4">

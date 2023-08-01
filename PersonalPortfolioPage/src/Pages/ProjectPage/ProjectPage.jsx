@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { useLocation } from "react-router-dom";
 import ThemeContext from "../../Contexts/ThemeContext";
 import todoPitch from "../../../public/ToDoPitch.pdf";
+import focusHubBg from "../../../public/focusHubBg.png";
 import todoPitchBg from "../../../public/todoPitchBg.png";
 const ProjectPage = () => {
   const { theme } = useContext(ThemeContext);
@@ -92,7 +93,7 @@ const ProjectPage = () => {
         </div>
         <div aria-hidden="true" className="mt-10 lg:mt-0">
           <a id="focusHubLink" href="https://additional-focushub.vercel.app/" target="_blank">
-            <img src="../../assets/images/focusHubBg.png" alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500" />
+            <img src={focusHubBg} alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500" />
             <label htmlFor="focusHubLink" className="text-justify">
               Click to open App
             </label>
