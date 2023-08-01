@@ -6,6 +6,7 @@ import { motion, useScroll } from "framer-motion";
 import ThemeToggle from "../../ThemeToggle/ThemeToggle";
 import ThemeContext from "../../Contexts/ThemeContext";
 import signature40 from "../../../public/icons8-signature-40.png";
+import classes from "./Header.module.css";
 
 const Header = ({ isAboutPageVisible, isContactPageVisible, isSkillsPageVisible, isProjectsPageVisible }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -137,7 +138,7 @@ const Header = ({ isAboutPageVisible, isContactPageVisible, isSkillsPageVisible,
           </div>
         </Dialog.Panel>
       </Dialog>
-      <motion.div className="progress-bar" style={{ scaleX: scrollYProgress }} />
+      <motion.div className={classes.progressBar} style={{ scaleX: scrollYProgress }} />
     </header>
   );
 };
