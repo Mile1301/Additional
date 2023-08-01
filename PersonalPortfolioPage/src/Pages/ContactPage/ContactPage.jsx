@@ -90,7 +90,10 @@ export default function ContactPage() {
                   *
                 </span>
                 {showPopover && (
-                  <div className="absolute top-1 bg-white border border-gray-300 shadow-lg rounded p-2 -mt-3 left-full ml-2" role="tooltip">
+                  <div
+                    className="absolute top-1 bg-white text-gray-400 border border-gray-300 shadow-lg rounded p-2 -mt-3 left-full ml-2"
+                    role="tooltip"
+                  >
                     Required
                   </div>
                 )}
@@ -153,7 +156,10 @@ export default function ContactPage() {
                   *
                 </span>
                 {showPopover && (
-                  <div className="absolute top-1 bg-white border border-gray-300 shadow-lg rounded p-2 -mt-3 left-full ml-2" role="tooltip">
+                  <div
+                    className="absolute top-1 bg-white text-gray-400 border border-gray-300 shadow-lg rounded p-2 -mt-3 left-full ml-2"
+                    role="tooltip"
+                  >
                     Required
                   </div>
                 )}
