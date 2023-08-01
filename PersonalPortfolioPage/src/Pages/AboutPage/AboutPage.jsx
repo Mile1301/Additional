@@ -31,8 +31,8 @@ const AboutPage = () => {
       id="about"
       className={
         location.pathname === "/home"
-          ? " bg-white px-6 py-24 sm:py-15 lg:px-8 text-gray-600"
-          : "isolate bg-white px-6 py-24 sm:py-15 lg:px-8 text-gray-600"
+          ? " bg-white px-6 py-24 sm:py-15 lg:px-8 text-gray-900"
+          : "isolate bg-white px-6 py-24 sm:py-15 lg:px-8 text-gray-900"
       }
       style={theme}
     >
@@ -50,7 +50,7 @@ const AboutPage = () => {
           <div className="lg:pr-8 lg:pt-4">
             <div className="lg:max-w-lg">
               <h2 className="text-base font-semibold leading-7 text-indigo-600">Welcome</h2>
-              <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">About me</p>
+              <p className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">About me</p>
               <p className="mt-6 text-lg leading-8 text-justify">
                 As an aspiring full-stack web developer, I bring a passion for coding and a strong desire to create engaging and user-friendly web
                 applications. With a solid foundation in HTML, CSS and JavaScript as well as ongoing learning in Node.js, MongoDB, SQL, React and
