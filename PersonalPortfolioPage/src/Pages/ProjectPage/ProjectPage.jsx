@@ -4,6 +4,7 @@ import ThemeContext from "../../Contexts/ThemeContext";
 import todoPitch from "../../../public/ToDoPitch.pdf";
 import focusHubBg from "../../../public/focusHubBg.png";
 import todoPitchBg from "../../../public/todoPitchBg.png";
+import roadStatusBg from "../../../public/roadStatusBg.png";
 const ProjectPage = () => {
   const { theme } = useContext(ThemeContext);
   const location = useLocation();
@@ -49,7 +50,7 @@ const ProjectPage = () => {
                 <h4 className="text-lg font-medium leading-6">It's a productivity App in its core</h4>
                 <p className="mt-2">
                   The name is Focushub because the purpose of the application is to focus on the sources of the problems, on the details, on the
-                  causes of their occurrence, FOCUS on the core of the problem"
+                  causes of their occurrence, FOCUS on the core of the problem
                 </p>
               </div>
             </div>
@@ -161,6 +162,68 @@ const ProjectPage = () => {
               </label>
             </a>
           </div>
+        </div>
+      </div>
+      <div className="mt-10 grid lg:gap-8 lg:grid-cols-2 lg:items-center">
+        <div>
+          <h3 className="text-2xl font-bold tracking-tight sm:text-3xl">Road Status</h3>
+          <p className="mt-3 text-lg">
+            Application for sharing road statuses - <strong>MVP ready</strong>
+          </p>
+          <div className="mt-12 space-y-12">
+            <div className="flex">
+              <div className="flex-shrink-0">
+                <div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-gray-900">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </div>
+              </div>
+              <div className="ml-4">
+                <h4 className="text-lg font-medium leading-6">It's a sharing content App</h4>
+                <p className="mt-2">
+                  Find the latest interactions on the road - road blocks, accidents, shows, reconstructions, detours and many more
+                </p>
+              </div>
+            </div>
+            <div className="flex">
+              <div className="flex-shrink-0">
+                <div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-gray-900">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </div>
+              </div>
+              <div className="ml-4">
+                <h4 className="text-lg font-medium leading-6">The goal is to detect all the road activities that would affect your journey</h4>
+                <p className="mt-2">
+                  The application shows all the road activities in real time that can shorten or delay the journey, affect safety or have any other
+                  effect on the traffic activities or capacities.
+                </p>
+              </div>
+            </div>
+            <div className="flex">
+              <div className="flex-shrink-0">
+                <div className="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-gray-900">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-7 h-7">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </div>
+              </div>
+              <div className="ml-4">
+                <h4 className="text-lg font-medium leading-6">Used technologies</h4>
+                <p className="mt-2">This application was made using ReactJs, Redux, Tailwind, NestJs and PostgreSQL.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div aria-hidden="true" className="mt-10 lg:mt-0">
+          <a id="roadStatusLink" href="https://github.com/Mile1301/Full-stack-roads-status" target="_blank">
+            <img src={roadStatusBg} alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500" />
+            <label htmlFor="roadStatusLink" className="text-justify">
+              Click to open GitHub repo
+            </label>
+          </a>
         </div>
       </div>
       <div
