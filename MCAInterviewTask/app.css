@@ -1,0 +1,214 @@
+/* Main CSS */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+  --yellow-color: #ffdb15;
+  --white-color: white;
+  --button-hover-color: rgb(77, 168, 205);
+  --border-black: #090c08;
+}
+
+html {
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  background-color: #757083;
+  margin: 0;
+}
+
+main {
+  padding: 50px;
+}
+
+/* Header CSS */
+header {
+  background-color: #474056;
+  color: var(--white-color);
+  border-bottom: 2px solid #2d3436;
+  margin-bottom: 20px;
+
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+  gap: 40px;
+  align-items: center;
+}
+
+header strong {
+  font-size: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 50px;
+  font-weight: 300;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 15px;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 4px;
+  color: var(--white-color);
+  border: 2px solid var(--white-color);
+
+  &:hover {
+    background-color: var(--button-hover-color);
+  }
+}
+
+.active {
+  background-color: var(--yellow-color);
+  padding: 5px;
+  border-radius: 4px;
+  color: var(--border-black);
+}
+
+/* Items container CSS */
+.container {
+  background-color: #e6ecde;
+  border-radius: 4px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  color: var(--border-black);
+  margin: 15px;
+  padding: 30px;
+}
+.container h1 {
+  margin: 0;
+}
+
+/* List items css */
+.list-content {
+  font-size: 20px;
+}
+
+.list-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Receipt items */
+.receipt-item {
+  background-color: var(--white-color);
+  padding: 15px;
+  border: 1.5px solid var(--border-black);
+  margin: 25px 5px;
+  color: #474056;
+  border-radius: 4px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-isDomestic {
+  font-weight: 600;
+  padding: 10px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.domestic {
+  background-color: rgb(115, 205, 77);
+}
+.imported {
+  background-color: rgb(213, 44, 44);
+}
+
+.item-name,
+.item-description {
+  background-color: var(--button-hover-color);
+  font-weight: 600;
+  margin-left: 15px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 4px;
+}
+.item-price,
+.item-weight {
+  background-color: var(--yellow-color);
+  font-weight: 600;
+  margin-left: 15px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+/* Analytic details part CSS */
+
+.details-heading {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  align-items: center;
+}
+
+.details-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.details-footer {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+
+  em {
+    font-size: 26px;
+  }
+}
+
+.details-footer button {
+  font-size: 24px;
+  padding: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+  height: 75px;
+  background-color: var(--yellow-color);
+
+  &:hover {
+    background-color: var(--button-hover-color);
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+/* Dialog box - modal CSS */
+dialog {
+  border: 1px solid var(--border-black);
+  border-radius: 4px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  width: 300px;
+  text-align: center;
+}
+
+dialog button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: var(--white-color);
+}
+
+dialog span {
+  border: 1px solid var(--border-black);
+  padding-inline: 3px;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}

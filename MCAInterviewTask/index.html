@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css" />
+    <script src="app.js" defer></script>
+    <title>MCA Interview Task</title>
+  </head>
+  <header>
+    <h1>Supermarket Client</h1>
+    <strong>Total items: <span class="totalItemsCount"></span> </strong>
+    <nav>
+      <ul>
+        <li class="placeholder">Click on this button 👉</li>
+        <li><a class="getItemsBtn" href="#">Get items</a></li>
+      </ul>
+    </nav>
+  </header>
+  <body>
+    <section class="container">
+      <div>
+        <h1>Receipt Output</h1>
+      </div>
+      <div class="list-content">
+        <ul class="listItemsContainer">
+          <li>
+            <div class="receipt-item placeholder">
+              <span class="item-isDomestic">Product origin: Domestic or Imported </span>
+              <div>
+                <span class="item-name">Item Name</span>
+                <span class="item-price">Price :</span>
+                <span class="item-description">Description </span>
+                <span class="item-weight">Weight: </span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="container">
+      <div class="details-heading">
+        <h2>Products Analytics</h2>
+      </div>
+      <div class="details-body hidden">
+        <h3>Analytics by product origin</h3>
+        <div class="details-info">
+          <strong class="domesticCost">Domestic cost: $</strong>
+          <strong class="importedCost">Imported cost: $</strong>
+          <strong class="domesticCount">Domestic count:</strong>
+          <strong class="importedCount">Imported count:</strong>
+        </div>
+        <div class="details-footer">
+          <p>
+            <em>Supermarket Analytics by MCA</em>
+          </p>
+          <button type="button" class="closeBtn">Close</button>
+        </div>
+      </div>
+    </section>
+    <dialog class="modal">
+      <form method="dialog">
+        <button class="closeBtn">❌</button>
+      </form>
+      <h4>
+        <strong>Close this message and click the <span>Close</span> button in Product Analytics to get items again</strong>
+      </h4>
+    </dialog>
+  </body>
+</html>
