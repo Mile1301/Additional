@@ -1,0 +1,29 @@
+<section class="container">
+  <div class="heading">
+    <h1>Movies</h1>
+    <h1>Average Rating</h1>
+  </div>
+  <div class="list-content">
+    <ul *ngIf="moviesSubject$ | async as movies">
+      <li *ngFor="let movie of movies" (click)="goToMovieDetails(movie.id)">
+        <app-movie-item [movie]="movie"></app-movie-item>
+      </li>
+    </ul>
+  </div>
+  <div class="controls">
+    <button
+      class="btn"
+      (click)="loadPreviousPage()"
+      [disabled]="!previousButtonSubject$.value"
+    >
+      Previous Page
+    </button>
+    <button
+      class="btn"
+      (click)="loadNextPage()"
+      [disabled]="!nextButtonSubject$.value"
+    >
+      Next Page
+    </button>
+  </div>
+</section>

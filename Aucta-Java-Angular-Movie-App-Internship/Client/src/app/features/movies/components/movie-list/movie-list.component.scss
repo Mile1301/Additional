@@ -1,0 +1,12 @@
+.list-content {
+  font-size: 20px;
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+}
+.heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
